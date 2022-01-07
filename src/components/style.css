@@ -1,66 +1,103 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(25, 46, 59);
-    color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(25, 46, 59);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
-.answer{
-    height: 20vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 1rem;
-    font-size: 2rem;
+.answer {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
-.all_btn{
-    padding: 1rem;
-    height: 80vh;
-    background-color: rgb(15, 27, 34);
-    /* background-color: rgb(36, 46, 58); */
+.answer form {
+  width: 100vw;
+  padding: 0rem .5rem;
 }
-.btn_rows{
-    width: 100%;
-    
+form input {
+  height: 100px;
+  background-color: rgba(0, 183, 255, 0);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 90%;
+  padding: 1rem;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: end;
+  letter-spacing: 2px;
 }
-.row{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem 0rem;
-    /* background-color: turquoise; */
+.all_btn {
+  padding: 1rem;
+  height: 80vh;
+  background-color: rgb(15, 27, 34);
+  /* background-color: rgb(36, 46, 58); */
 }
-.last_row{
-    justify-content: flex-end;
+.btn_rows {
+  width: 100%;
 }
-.btns{
-    margin: 0rem .5rem;
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0rem;
+  /* background-color: turquoise; */
+}
+.hide {
+    margin: 0rem 0.5rem;
     width: 80px;
     height: 80px;
     padding: 10px;
     font-size: 1.3rem;
     font-weight: 600;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     border: none;
     border-radius: 50%;
     background-color: rgba(0, 162, 255, 0);
     cursor: pointer;
     color: white;
 }
-.btns:hover{
-    background-color: white;
-    color: rgb(34, 34, 34);
+.btns {
+  margin: 0rem 0.5rem;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 162, 255, 0);
+  cursor: pointer;
+  color: white;
 }
-.c:hover{
-    background-color: rgb(182, 51, 51);
-    color: white;
+.btns:hover {
+  background-color: white;
+  color: rgb(34, 34, 34);
 }
-.equal:hover{
-    background-color: rgb(0, 128, 64);
-    color: white;
+.clear:hover {
+  background-color: rgb(182, 51, 51);
+  color: white;
 }
-.sign:hover{
-    background-color: rgb(250, 223, 104);
-    color: rgb(34, 34, 34);
+.c:hover {
+  background-color: rgb(51, 173, 182);
+  color: white;
+}
+.equal:hover {
+  background-color: rgb(0, 128, 64);
+  color: white;
+}
+.sign:hover {
+  background-color: rgb(250, 223, 104);
+  color: rgb(34, 34, 34);
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active{
+    outline: none;
 }
